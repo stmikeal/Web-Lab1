@@ -1,0 +1,132 @@
+
+
+<!DOCTYPE html>
+
+<?php
+	$message = "suc";
+?>
+
+<html lang="ru">
+<!--
+Студент,	 выполнивший работу: Степанов Михаил Алексеевич
+Группа: P3230
+Вариант: 30015
+-->
+<head>
+	<meta charset="UTF-8">
+	<link rel="icon" href="img/tab-icon.ico">
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+	<title>Web-lab 1</title>
+</head>
+
+<body>
+	<script src="scripts/valid.js"></script>
+	<table id="main-grid">
+		<tr>
+			<td id="header-title" colspan="2">
+				<center id="header-text" class="left-aligned">
+					Студент: Степанов Михаил Алексеевич<br>
+					Группа: P3230<br>
+					Вариант: 30015
+				</center>
+			</td>
+			<td id="header-joke">
+				<button id="button-joke" onclick="joke()">Хочу анекдот</button>
+			</td>
+		</tr>
+		<tr>
+			<td id="content-graph">
+				<center>
+					<img src="img/graph.png">
+				</center>
+			</td>
+			<td id="content-form">
+				<form id="input-form" action="" method="POST">
+					<fieldset>
+						<legend><span id="legend-text">Проверьте вашу точку</span></legend>
+						<table id="input-form">
+							<!-- X-input field -->
+							<tr class="label-col">
+								<td rowspan="2" class="input-grid-label">
+									<label class="bold-label">X: </label>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input name="x" type="text" class="text-input" id="x-textinput">
+								</td>
+							</tr>
+							
+							<!-- Y-input field -->
+							<tr class="label-col">
+								<td rowspan="2" class="input-grid-label">
+									<label class="bold-label">Y: </label>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input type="text" class="text-input" id="y-textinput">
+								</td>
+							</tr>
+							
+							<!-- R-input field -->
+							<tr class="label-col">
+								<td rowspan="2" class="input-grid-label">
+									<label class="bold-label">R: </label>
+								</td>
+							</tr>
+							<tr>
+								<td>
+								<!-- There are a few checkbox fields that contained in one row of a table -->
+									<table>
+										<tr>
+											<td class="r-checkbox">
+												<label class="checkbox-label">1</label>
+												<input type="checkbox" class="input-checkbox" id="r-checkbox1" value="1">
+											</td>
+											<td class="r-checkbox">
+												<label class="checkbox-label">2</label>
+												<input type="checkbox" class="input-checkbox" id="r-checkbox1" value="2">
+											</td>
+											<td class="r-checkbox">
+												<label class="checkbox-label">3</label>
+												<input type="checkbox" class="input-checkbox" id="r-checkbox1" value="3">
+											</td>
+											<td class="r-checkbox">
+												<label class="checkbox-label">4</label>
+												<input type="checkbox" class="input-checkbox" id="r-checkbox1" value="4">
+											</td>
+											<td class="r-checkbox">
+												<label class="checkbox-label">5</label>
+												<input type="checkbox" class="input-checkbox" id="r-checkbox1" value="5">
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+						<input name='form' class="button-form" type="button" value="Проверить" onclick="sayThanks()">
+						<input class="button-form" type="reset" value="Сбросить">
+					</fieldset>
+				</form>
+			</td>
+			<td id="answer">
+				<center id="textwindow">
+					123123
+				</center>
+			</td>
+		</tr>
+		<tr>
+			<td id="footer-title" colspan="2">
+				<center class="center-aligned">Если возникли вопросы пишите нам на почту или обращайтесь по номеру телефона<br>
+				+7 (800) 555-35-35<br>
+				noreply@codeforces.com</center>
+			</td>
+			<td id="footer-logo">
+				<center><img src="img/itmo.png" id="img-logo"></center>
+			</td>
+		</tr>
+	</table>
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+body {
+	font-size: 16px;
+	margin: 0 0 0 0;
+}
+
+#legend-text {
+	font-size: 14px;
+}
+
+.bold-label {
+	font-weight: bold;
+}
+
+canvas {
+	background-color: black;
+}
+
+.button-form {
+	width: 100%;
+	border: none;
+}
+
+#content-mem {
+	padding: 30px 30px 30px 30px;
+}
+
+#answer {
+	border: 1px solid #888888;
+	border-radius: 20px;
+	width: 40%;
+	height: 450px;
+	padding: 0 0 0 0;
+}
+
+#textwindow {
+	text-align: center;
+}
+
+input {
+	border: 1px solid #888888;
+	border-radius: 10px;
+}
+
+button {
+	border: none;
+	border-radius: 50px;
+}
+
+table {
+	width: 100%;
+}
+
+#main-grid {
+	font-family: serif;
+	font-size: 20px;
+}
+
+td {
+
+	padding: 10px 10px 10px 10px;
+}
+
+#header-text {
+	
+}
+
+label {
+	font-size: 16px;
+}
+
+.text-input {
+
+	width: 90%;
+}
+
+#button-joke {
+	width: 100%;
+	height: 75px;
+	font-size: 20px;
+}
+
+
+#img-logo {
+	width: 300px;
+}
+
+
+
+fieldset {
+	border-radius: 20px;
+}
