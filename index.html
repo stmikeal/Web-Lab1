@@ -16,11 +16,12 @@
 	<meta charset="UTF-8">
 	<link rel="icon" href="img/tab-icon.ico">
 	<link rel="stylesheet" type="text/css" href="styles/style.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<title>Web-lab 1</title>
 </head>
 
 <body>
-	<script src="scripts/valid.js"></script>
+	<script src="scripts/jokes.js"></script>
 	<table id="main-grid">
 		<tr>
 			<td id="header-title" colspan="2">
@@ -53,7 +54,7 @@
 							</tr>
 							<tr>
 								<td>
-									<input name="x" type="text" class="text-input" id="x-textinput">
+									<input name="x" id="xtextinput" type="text" class="number1" data-min="-3" data-max="5" data-separator=",">
 								</td>
 							</tr>
 							
@@ -65,7 +66,7 @@
 							</tr>
 							<tr>
 								<td>
-									<input type="text" class="text-input" id="y-textinput">
+									<input name="y" id="ytextinput" type="text" class="number2" data-min="-3" data-max="5" data-separator=",">
 								</td>
 							</tr>
 							
@@ -80,39 +81,39 @@
 								<!-- There are a few checkbox fields that contained in one row of a table -->
 									<table>
 										<tr>
-											<td class="r-checkbox">
+											<td class="rcheckbox">
 												<label class="checkbox-label">1</label>
-												<input type="checkbox" class="input-checkbox" id="r-checkbox1" value="1">
+												<input type="checkbox" class="input-checkbox" id="rcheckbox1" value="1" checked>
 											</td>
 											<td class="r-checkbox">
 												<label class="checkbox-label">2</label>
-												<input type="checkbox" class="input-checkbox" id="r-checkbox1" value="2">
+												<input type="checkbox" class="input-checkbox" id="rcheckbox2" value="2">
 											</td>
 											<td class="r-checkbox">
 												<label class="checkbox-label">3</label>
-												<input type="checkbox" class="input-checkbox" id="r-checkbox1" value="3">
+												<input type="checkbox" class="input-checkbox" id="rcheckbox3" value="3">
 											</td>
 											<td class="r-checkbox">
 												<label class="checkbox-label">4</label>
-												<input type="checkbox" class="input-checkbox" id="r-checkbox1" value="4">
+												<input type="checkbox" class="input-checkbox" id="rcheckbox4" value="4">
 											</td>
 											<td class="r-checkbox">
 												<label class="checkbox-label">5</label>
-												<input type="checkbox" class="input-checkbox" id="r-checkbox1" value="5">
+												<input type="checkbox" class="input-checkbox" id="rcheckbox5" value="5">
 											</td>
 										</tr>
 									</table>
 								</td>
 							</tr>
 						</table>
-						<input name='form' class="button-form" type="button" value="Проверить" onclick="sayThanks()">
+						<input name='form' id="forsubmit" class="button-form" type="button" value="Проверить" onclick="startPHP()">
 						<input class="button-form" type="reset" value="Сбросить">
 					</fieldset>
 				</form>
 			</td>
 			<td id="answer">
 				<center id="textwindow">
-					123123
+					Жду команды!
 				</center>
 			</td>
 		</tr>
@@ -127,6 +128,7 @@
 			</td>
 		</tr>
 	</table>
+	<script src="scripts/valid.js"></script>
 </body>
 
 </html>

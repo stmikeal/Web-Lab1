@@ -19,11 +19,6 @@ canvas {
 	width: 100%;
 	border: none;
 }
-
-#content-mem {
-	padding: 30px 30px 30px 30px;
-}
-
 #answer {
 	border: 1px solid #888888;
 	border-radius: 20px;
@@ -68,7 +63,7 @@ label {
 	font-size: 16px;
 }
 
-.text-input {
+.number1, .number2 {
 
 	width: 90%;
 }
