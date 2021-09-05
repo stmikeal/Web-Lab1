@@ -35,7 +35,7 @@ function checkTriangle($x, $y, $r) {
 }
 
 function checkRectangle($x, $y, $r) {
-	return $x >= 0 && $y <= 0 && $x*2 <= $r && $y >= $r;
+	return $x >= 0 && $y <= 0 && $x*2 <= $r && $y >= -$r;
 }
 
 function checkCircle($x, $y, $r) {

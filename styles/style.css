@@ -1,10 +1,68 @@
 body {
 	font-size: 16px;
 	margin: 0 0 0 0;
+	background-color: #222222;
+	color: #8C9EAE;
+}
+
+label input {
+	display: none;
+}
+
+label span {
+  height: 20px;
+  width: 20px;
+  text-align: center;
+  padding: 0 0 0 0;
+  line-height: 20px;
+  color: #8C9EAE;
+  border: solid 1px #8C9EAE;
+  display: inline-block;
+  position: relative;
+  background-color: #222222;
+  border-radius:50px;
+  padding:3px;
+}
+
+[type=checkbox]:checked + span {/* <-- ставим иконку, когда чекбокс включен  */
+	background-color: #8C9EAE;
+	color: #222222;
+	border: solid 1px #222222;
 }
 
 #legend-text {
 	font-size: 14px;
+}
+
+#history-label, .historyElem, #history-td, #historyRow, .historyTd, #historyBrowser {
+	text-align: center;
+	border-radius: 50px;
+	padding: 0 0 0 0;
+	background-color: #222222;
+	color: #8C9EAE;
+	border: solid 1px #8C9EAE;
+	
+}
+
+
+
+#historyRow, .historyElem, #historyBrowser {
+	border: none;
+}
+
+.historyElem {
+	background-color: rgba(0,0,0,0);
+	background-color: #222222;
+	color: #8C9EAE;
+	border: solid 1px #8C9EAE;
+}
+
+#historyRow {
+	background-color: #EEEEEE;
+}
+
+#historyRow:nth-child(even) {
+	background-color: #DDDDDD;
 }
 
 .bold-label {
@@ -15,15 +73,14 @@ canvas {
 	background-color: black;
 }
 
-.button-form {
+fieldset > .button-form {
 	width: 100%;
-	border: none;
 }
 #answer {
-	border: 1px solid #888888;
+	border: 1px solid #8C9EAE;
 	border-radius: 20px;
 	width: 40%;
-	height: 450px;
+	height: 300px;
 	padding: 0 0 0 0;
 }
 
@@ -31,15 +88,28 @@ canvas {
 	text-align: center;
 }
 
-input {
-	border: 1px solid #888888;
+input[type="text"] {
 	border-radius: 10px;
+	background-color: #222222;
+	color: #8C9EAE;
+	border: solid 1px #8C9EAE;
+	width: 100%;
+	padding-left: 10px;
+	outline: none;
 }
 
-button {
+
+button, input[type="button"], input[type="reset"] {
 	border: none;
 	border-radius: 50px;
+	background-color: #222222;
+	color: #8C9EAE;
+	border: solid 1px #8C9EAE;
+	padding: 5px 5px;
+	margin: 5px 0 0 0;
 }
+
+
 
 table {
 	width: 100%;
@@ -56,7 +126,7 @@ td {
 }
 
 #header-text {
-	
+	font-family: serif;
 }
 
 label {
@@ -83,4 +153,5 @@ label {
 
 fieldset {
 	border-radius: 20px;
+	border: solid 1px #8C9EAE;
 }

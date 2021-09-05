@@ -1,10 +1,4 @@
-
-
 <!DOCTYPE html>
-
-<?php
-	$message = "suc";
-?>
 
 <html lang="ru">
 <!--
@@ -38,7 +32,7 @@
 		<tr>
 			<td id="content-graph">
 				<center>
-					<img src="img/graph.png">
+					<canvas id="graph" width="300" height="300">Обновите браузер</canvas>
 				</center>
 			</td>
 			<td id="content-form">
@@ -49,7 +43,7 @@
 							<!-- X-input field -->
 							<tr class="label-col">
 								<td rowspan="2" class="input-grid-label">
-									<label class="bold-label">X: </label>
+									<label class="bold-label">X[-3..5]: </label>
 								</td>
 							</tr>
 							<tr>
@@ -61,7 +55,7 @@
 							<!-- Y-input field -->
 							<tr class="label-col">
 								<td rowspan="2" class="input-grid-label">
-									<label class="bold-label">Y: </label>
+									<label class="bold-label">Y[-3..5]: </label>
 								</td>
 							</tr>
 							<tr>
@@ -82,24 +76,34 @@
 									<table>
 										<tr>
 											<td class="rcheckbox">
-												<label class="checkbox-label">1</label>
-												<input type="checkbox" class="input-checkbox" id="rcheckbox1" value="1" checked>
+												<label>
+													<input type="checkbox" class="input-checkbox" id="rcheckbox1" value="1">
+													<span>1</span>
+												</label>
 											</td>
 											<td class="r-checkbox">
-												<label class="checkbox-label">2</label>
-												<input type="checkbox" class="input-checkbox" id="rcheckbox2" value="2">
+												<label>
+													<input type="checkbox" class="input-checkbox" id="rcheckbox2" value="2">
+													<span>2</span>
+												</label>
 											</td>
 											<td class="r-checkbox">
-												<label class="checkbox-label">3</label>
-												<input type="checkbox" class="input-checkbox" id="rcheckbox3" value="3">
+												<label>
+													<input type="checkbox" class="input-checkbox" id="rcheckbox3" value="3">
+													<span>3</span>
+												</label>
 											</td>
 											<td class="r-checkbox">
-												<label class="checkbox-label">4</label>
-												<input type="checkbox" class="input-checkbox" id="rcheckbox4" value="4">
+												<label>
+													<input type="checkbox" class="input-checkbox" id="rcheckbox4" value="4">
+													<span>4</span>
+												</label>
 											</td>
 											<td class="r-checkbox">
-												<label class="checkbox-label">5</label>
-												<input type="checkbox" class="input-checkbox" id="rcheckbox5" value="5">
+												<label>
+													<input type="checkbox" class="input-checkbox" id="rcheckbox5" value="5" checked>
+													<span>5</span>
+												</label>
 											</td>
 										</tr>
 									</table>
@@ -107,7 +111,7 @@
 							</tr>
 						</table>
 						<input name='form' id="forsubmit" class="button-form" type="button" value="Проверить" onclick="startPHP()">
-						<input class="button-form" type="reset" value="Сбросить">
+						<input id="forreset" class="button-form" type="reset" value="Сбросить">
 					</fieldset>
 				</form>
 			</td>
@@ -115,6 +119,17 @@
 				<center id="textwindow">
 					Жду команды!
 				</center>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="3" id="history-td">
+				Таблица результатов
+			</td>
+		</tr>
+		<tr>
+			<td colspan="3" id="historyRow">
+				<table id="historyBrowser">
+				</table>
 			</td>
 		</tr>
 		<tr>
@@ -129,6 +144,7 @@
 		</tr>
 	</table>
 	<script src="scripts/valid.js"></script>
+	<script src="scripts/graph.js"></script>
 </body>
 
 </html>
